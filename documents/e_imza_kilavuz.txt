@@ -1,0 +1,1 @@
+Fatih Belediyesi E-Imza Kurulumu: AKIS kart yoneticisi ve Java kurulur, token suruculeri tanitilir.
