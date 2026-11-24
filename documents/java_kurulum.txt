@@ -1,0 +1,5 @@
+Java kurulumu: E-imza ve AKİS uygulamaları için Java çalışma ortamı (JRE) gereklidir. Güncel JRE sürümü indirilip kurulur. Kurulumdan sonra komut satırında java -version yazılarak sürüm kontrol edilir.
+
+Java sürüm hatası alınırsa: Eski Java sürümü denetim masasından kaldırılır, yeni sürüm kurulur ve bilgisayar yeniden başlatılır.
+
+Java uygulaması güvenlik uyarısı verirse: Uygulama adresi Java güvenlik ayarlarındaki istisna listesine eklenir.

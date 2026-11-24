@@ -1,0 +1,5 @@
+Arayüz (web uygulaması) açılmıyor sorunu: Tarayıcı önbelleği temizlenir ve sayfa yeniden yüklenir. Sorun sürerse farklı bir tarayıcıda denenir.
+
+Arayüzde e-imza ile imzalama butonu çalışmıyorsa: Token takılı mı kontrol edilir, AKİS kart yöneticisinin açık olduğundan emin olunur ve tarayıcıda Java eklentisi veya imza uygulamasına izin verilir.
+
+Arayüzde oturum sürekli kapanıyorsa: Bilgisayarın tarih ve saat ayarları doğrulanır, tarayıcı çerezlerine izin verilir ve oturum yeniden açılır.

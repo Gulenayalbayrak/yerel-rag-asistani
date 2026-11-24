@@ -1,0 +1,5 @@
+AKİS kart yöneticisi kurulumu: Kurulum dosyası yönetici haklarıyla çalıştırılır. Kurulum bittikten sonra kart okuyucu takılır ve kart yöneticisi açılır. Kartın listede görünmesi gerekir.
+
+AKİS kart yöneticisi açılmıyorsa: Önce Java kurulu olup olmadığı kontrol edilir. Java yoksa kurulmalıdır. Ardından kart yöneticisi yönetici olarak yeniden çalıştırılır.
+
+AKİS kartı listede görünmüyorsa: Kart okuyucunun USB bağlantısı kontrol edilir, kart çıkarılıp tekrar takılır ve kart yöneticisi yeniden başlatılır. Sorun sürerse kart okuyucu sürücüsü güncellenir.

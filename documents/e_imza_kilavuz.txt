@@ -1,1 +1,7 @@
-Fatih Belediyesi E-Imza Kurulumu: AKIS kart yoneticisi ve Java kurulur, token suruculeri tanitilir.
+Fatih Belediyesi E-İmza Kurulumu: AKİS kart yöneticisi ve Java kurulur, token sürücüleri tanıtılır.
+
+E-imza token sürücüsü nasıl güncellenir: Önce AKİS kart yöneticisi kapatılır. Üretici sitesinden token için en güncel sürücü indirilir ve kurulur. Kurulumdan sonra bilgisayar yeniden başlatılır ve AKİS kart yöneticisi yeniden açılır.
+
+E-imza token takılı olduğu halde tanınmıyorsa: Token farklı bir USB portuna takılır. Aygıt yöneticisinde token görünüyor mu kontrol edilir. Görünmüyorsa sürücü yeniden kurulur ve AKİS kart yöneticisi yeniden başlatılır.
+
+E-imza PIN kodu art arda yanlış girilirse token kilitlenir. Kilidi kaldırmak için PUK kodu gerekir. PUK kodu da unutulduysa token yenilenmesi için bilgi işlem birimine başvurulur.

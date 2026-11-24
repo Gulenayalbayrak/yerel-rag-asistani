@@ -1,23 +1,19 @@
-import os
-import sqlite3
-from db import init_db
+"""documents/ klasöründeki .txt kılavuzlarını veritabanına aktarır.
 
-def ingest_docs():
-    init_db()
-    conn = sqlite3.connect("knowledge.db")
-    cursor = conn.cursor()
-    
-    docs_path = "documents"
-    for filename in os.listdir(docs_path):
-        if filename.endswith(".txt"):
-            file_path = os.path.join(docs_path, filename)
-            with open(file_path, "r", encoding="utf-8") as f:
-                content = f.read()
-                cursor.execute("INSERT INTO documents (content) VALUES (?)", (content,))
-                
-    conn.commit()
-    conn.close()
-    print("Belgeler başarıyla içe aktarıldı ve indekslendi!")
+Kullanım:  python ingest.py
+Tekrar çalıştırmak güvenlidir: zaten kayıtlı dosyalar atlanır.
+(Uygulama açılışta da bunu otomatik yapar.)
+"""
+from sqlmodel import Session
+
+from database import create_db_and_tables, engine
+from services import ingest_folder
 
 if __name__ == "__main__":
-    ingest_docs()
+    create_db_and_tables()
+    with Session(engine) as session:
+        added = ingest_folder(session)
+    if added:
+        print("Eklenen belgeler:", ", ".join(added))
+    else:
+        print("Yeni belge yok, veritabanı güncel.")
